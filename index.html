@@ -36,71 +36,152 @@
       }
     </style>
   </head>
+
   <body>
-    <h1>Portfolio de Dami 💻</h1>
-    <p>
-      Un año de experiencia como <strong>Ingeniero Software</strong>.
-      Desarrollador fullstack.
-    </p>
-    <h2>Experiencia</h2>
-    <!-- <ul> to make a list of <li> items -->
-    <ul>
-      <li class="list-item">ADD Informática - 2022</li>
-      <li class="list-item">MyTaskPanel - 2021</li>
-    </ul>
-    <img
-      id="profileImage"
-      title="Foto CV de Dami"
-      alt="Una fotografía de Damián Valente que tiene en su CV"
-      src="/images/FotoCV.jpg"
-      width="300"
-      height="250"
-    />
-    <h2>Proyectos realizados:</h2>
-    <aside>
-      <header>
-        <h3>Mis tecnologías favoritas</h3>
-      </header>
-      <ol>
-        <li>.NET</li>
-        <li>HTML</li>
-        <li>React</li>
-        <li>CSS</li>
-        <li>Typescript</li>
-        <li>HTML</li>
-      </ol>
-    </aside>
-    <section>
-      <!-- Article is a section to group information related-->
-      <article>
+    <header>
+      <h1>Portfolio de Dami 💻</h1>
+
+      <nav>
+        <!-- Enlaces internos-->
+        <a href="#experiencia">Experiencia</a>
+        <a href="#proyectos">Proyectos</a>
+        <!-- Enlaces externos-->
+        <a
+          href="https://www.linkedin.com/in/damian-valente/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          LinkedIn
+        </a>
+      </nav>
+    </header>
+    <main>
+      <p>
+        Un año de experiencia como <strong>Ingeniero Software</strong>.
+        Desarrollador fullstack.
+      </p>
+      <h2 id="experiencia">Experiencia</h2>
+      <!-- <ul> to make a list of <li> items -->
+      <ul>
+        <li class="list-item">ADD Informática - 2022</li>
+        <li class="list-item">MyTaskPanel - 2021</li>
+      </ul>
+      <img
+        id="profileImage"
+        title="Foto CV de Dami"
+        alt="Una fotografía de Damián Valente que tiene en su CV"
+        src="/images/FotoCV.jpg"
+        width="300"
+        height="250"
+      />
+      <h2 id="proyectos">Proyectos realizados:</h2>
+      <!-- The aside section could be separate from the content (side bars)-->
+      <aside>
         <header>
-          <h4>Microservicio de Business Intelligence</h4>
+          <h3>Mis tecnologías favoritas</h3>
         </header>
-        <p>
-          Desarrollo de un microservicio de Business Intelligence desde su
-          creación hasta la gestión de su ciclo de vida.
-        </p>
-        <footer>
-          <small>
-            Tecnologías utilizadas: .NET | EntityFramework | AzureDevOps | DSL
-            Tools
-          </small>
-        </footer>
-      </article>
-      <article>
-        <header>
-          <h4>Sitio web de cobranzas</h4>
-        </header>
-        <p>
-          Implementación de un sistema de cobranzas, en un entorno saas, con
-          interfaz amigable y moderna.
-        </p>
-        <footer>
-          <small>
-            Tecnologías utilizadas: .NET | React | HTML | CSS | Git
-          </small>
-        </footer>
-      </article>
-    </section>
+        <ol>
+          <li>.NET</li>
+          <li>HTML</li>
+          <li>React</li>
+          <li>CSS</li>
+          <li>Typescript</li>
+          <li>HTML</li>
+        </ol>
+      </aside>
+      <section name="DescripcionProyectos">
+        <!-- Article is a block of information related-->
+        <article>
+          <header>
+            <h4>Microservicio de Business Intelligence</h4>
+          </header>
+          <p>
+            Desarrollo de un microservicio de Business Intelligence desde su
+            creación hasta la gestión de su ciclo de vida.
+          </p>
+          <footer>
+            <small>
+              Tecnologías utilizadas: .NET | EntityFramework | AzureDevOps | DSL
+              Tools
+            </small>
+          </footer>
+        </article>
+        <article>
+          <header>
+            <h4>Sitio web de cobranzas</h4>
+          </header>
+          <p>
+            Implementación de un sistema de cobranzas, en un entorno saas, con
+            interfaz amigable y moderna.
+          </p>
+          <footer>
+            <small>
+              Tecnologías utilizadas: .NET | React | HTML | CSS | Git
+            </small>
+          </footer>
+        </article>
+      </section>
+      <section name="PreguntasFrecuentes">
+        <h2>Preguntas frecuentes</h2>
+        <details open>
+          <summary>¿Qué estudios tienes?</summary>
+          <p>
+            Estudié en la universidad Politécnica de Valencia Ingeniería
+            Informática durante 4 años.
+          </p>
+        </details>
+        <details>
+          <summary>¿Qué nivel de ingles tienes?</summary>
+          <p>Realicé un First con un nivel B2.</p>
+        </details>
+      </section>
+      <section name="FormularioContacto">
+        <h2>Formulario de contacto</h2>
+        <form method="post" action="/">
+          <fieldset>
+            <legend>Información personal</legend>
+            <div>
+              <label>
+                Nombre:
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Damián Ezequiel Valente"
+                  required
+                />
+              </label>
+            </div>
+            <div>
+              <label>
+                Email:
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="dami@gmail.com"
+                  required
+                />
+              </label>
+            </div>
+            <div>
+              <label>
+                Teléfono:
+                <input
+                  type="tel"
+                  id="telefono"
+                  name="telefono"
+                  placeholder="123456789"
+                  required
+                  pattern="[0-9] {9}"
+                />
+              </label>
+            </div>
+          </fieldset>
+          <button type="submit">Enviar contacto</button>
+        </form>
+      </section>
+    </main>
+    <footer>Copyright @ 2024 - Portfolio de Damián Ezequiel Valente</footer>
   </body>
 </html>
