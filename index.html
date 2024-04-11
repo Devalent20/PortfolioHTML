@@ -1,9 +1,106 @@
-<h1>Portfolio de Dami</h1>
-<p>Un año de experiencia como <strong>Ingeniero Software</strong></p>
-<h2>Experiencia</h2>
-<!-- <ul> to make a list of <li> items -->
-<ul>
-  <li>ADD Informática - 2022</li>
-  <li>MyTaskPanel - 2021</li>
-</ul>
-<img src="" />
+<!DOCTYPE html>
+<html>
+  <!-- Metadatos -->
+  <head>
+    <!-- codificación -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Portfolio Damián Valente - Ingeniero de Software</title>
+    <meta
+      name="description"
+      content="Portfolio de Damian Valente. Desarrollador fullstack centrado en .NET y React."
+    />
+
+    <!-- OPEN GRAPH SEO -->
+    <meta
+      property="og:title"
+      content="Portofolio de un ingeniero de Software"
+    />
+    <meta
+      property="og:description"
+      content="Portfolio de Damian Valente. Desarrollador fullstack centrado en .NET y React."
+    />
+    <meta property="og:image" content="/images/FotoCV.jpg" />
+    <meta property="og:image:alt" content="Una fotografía de Damian" />
+
+    <!-- alternates links-->
+    <link rel="canonical" href="https://devalente.dev" />
+    <link rel="alternate" href="https://devalente.dev/en" hreflang="en-GB" />
+
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#09f" />
+    <link rel="icon" type="images/FotoCV.jpg" />
+    <style>
+      body {
+        background-color: rgb(219, 236, 236);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Portfolio de Dami 💻</h1>
+    <p>
+      Un año de experiencia como <strong>Ingeniero Software</strong>.
+      Desarrollador fullstack.
+    </p>
+    <h2>Experiencia</h2>
+    <!-- <ul> to make a list of <li> items -->
+    <ul>
+      <li class="list-item">ADD Informática - 2022</li>
+      <li class="list-item">MyTaskPanel - 2021</li>
+    </ul>
+    <img
+      id="profileImage"
+      title="Foto CV de Dami"
+      alt="Una fotografía de Damián Valente que tiene en su CV"
+      src="/images/FotoCV.jpg"
+      width="300"
+      height="250"
+    />
+    <h2>Proyectos realizados:</h2>
+    <aside>
+      <header>
+        <h3>Mis tecnologías favoritas</h3>
+      </header>
+      <ol>
+        <li>.NET</li>
+        <li>HTML</li>
+        <li>React</li>
+        <li>CSS</li>
+        <li>Typescript</li>
+        <li>HTML</li>
+      </ol>
+    </aside>
+    <section>
+      <!-- Article is a section to group information related-->
+      <article>
+        <header>
+          <h4>Microservicio de Business Intelligence</h4>
+        </header>
+        <p>
+          Desarrollo de un microservicio de Business Intelligence desde su
+          creación hasta la gestión de su ciclo de vida.
+        </p>
+        <footer>
+          <small>
+            Tecnologías utilizadas: .NET | EntityFramework | AzureDevOps | DSL
+            Tools
+          </small>
+        </footer>
+      </article>
+      <article>
+        <header>
+          <h4>Sitio web de cobranzas</h4>
+        </header>
+        <p>
+          Implementación de un sistema de cobranzas, en un entorno saas, con
+          interfaz amigable y moderna.
+        </p>
+        <footer>
+          <small>
+            Tecnologías utilizadas: .NET | React | HTML | CSS | Git
+          </small>
+        </footer>
+      </article>
+    </section>
+  </body>
+</html>
